@@ -1,0 +1,62 @@
+name: final_movie_night
+description: "A new Flutter project."
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ">=3.4.3 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  android_id: ^0.3.6
+  device_info_plus: ^9.1.0
+  shared_preferences: ^2.2.2
+  provider: ^6.1.1
+  http: ^1.1.0
+  flutter_dotenv: ^5.0.2
+  uuid: ^4.5.1
+  google_fonts: ^6.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.3.13
+
+flutter:
+  uses-material-design: true
+  assets:
+    - .env
+    - assets/images/popcorn.png
+    - assets/fonts/
+
+  fonts:
+    - family: FiraSans
+      fonts:
+        - asset: assets/fonts/FiraSans-Regular.ttf
+        - asset: assets/fonts/FiraSans-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/FiraSans-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/FiraSans-Black.ttf
+          weight: 900
+        - asset: assets/fonts/FiraSans-Italic.ttf
+          style: italic
+        - asset: assets/fonts/FiraSans-BoldItalic.ttf
+          weight: 700
+          style: italic
+        - asset: assets/fonts/FiraSans-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/FiraSans-SemiBoldItalic.ttf
+          weight: 600
+          style: italic
+        - asset: assets/fonts/FiraSans-ExtraBold.ttf
+          weight: 800
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/popcorn.png"
+  min_sdk_android: 21
